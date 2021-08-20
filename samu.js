@@ -254,16 +254,14 @@ message: {
 "productImageCount": 999
 },                          
 "businessOwnerJid": `0@s.whatsapp.net`
-}}}, caption: `😙Hola, @${num.split('@')[0]}, _*Bienvenido a ${mdata.subject}, esperamos que te la pases a gusto en este grupo✨*_\n\n_Recuerda siempre seguir las reglas y mantener una formalidad respetuosa_😉\n\nSon las *${jm}* del *${calender}*\n\n${mdata.desc}`, contextInfo: { mentionedJid: [num] }})
+}}}, caption: `Bɪᴇɴᴠᴇɴɪᴅ@, @${num.split('@')[0]}, ᴇsᴛᴇ ᴇs ᴛᴜ ᴄʟᴀɴ 🍸🦦🍸\n\n🍶Aquí se convive y reporta todo punto que obtengas en actividades🍶\n\n• El emoji que siempre nos representa es el que se ubica al lado del nombre del grupo, ¡nunca olvides de usarlo en cada respuesta a una actividad!🔅\n\n_↬[Si quieres, también tienes la opción de ingresar al grupo general, que es donde conviven todos los clanes/org. juntos. Igualmente no es obligatorio.]↫_\n\nhttps://chat.whatsapp.com/KGCO36rg6mc0dvbtay8Fv3\n\n✨Recuerda siempre seguir las reglas y nunca olvidar el respeto, una convivencia agradable es algo que todos merecemos. Ten un buen día.✨`, contextInfo: { mentionedJid: [num] }})
 } catch {
-samu330.sendMessage(mdata.id, `😙Hola, @${num.split('@')[0]}, _*Bienvenido a ${mdata.subject}, esperamos que te la pases a gusto en este grupo✨*_\n\n_Recuerda siempre seguir las reglas y mantener una formalidad respetuosa_😉\n\nSon las *${jm}* del *${calender}*\n\n${mdata.desc}`, MessageType.text)
+samu330.sendMessage(mdata.id, `Bɪᴇɴᴠᴇɴɪᴅ@, x, ᴇsᴛᴇ ᴇs ᴛᴜ ᴄʟᴀɴ 🍸🦦🍸\n\n🍶Aquí se convive y reporta todo punto que obtengas en actividades🍶\n\n• El emoji que siempre nos representa es el que se ubica al lado del nombre del grupo, ¡nunca olvides de usarlo en cada respuesta a una actividad!🔅\n\n_↬[Si quieres, también tienes la opción de ingresar al grupo general, que es donde conviven todos los clanes/org. juntos. Igualmente no es obligatorio.]↫_\n\nhttps://chat.whatsapp.com/KGCO36rg6mc0dvbtay8Fv3\n\n✨Recuerda siempre seguir las reglas y nunca olvidar el respeto, una convivencia agradable es algo que todos merecemos. Ten un buen día.✨`, MessageType.text)
 }
 //leave
 }  else if (anu.action == 'remove') {
 num = anu.participants[0]
-teks = `_Weno ps.... amm😪...  @${num.split('@')[0]} se nos fue, ni llorar es bueno:)_
-_*Ojala y le baya bien, y mas despues..... que lo atropelle un tren!!🚉🤣*_
-*No se awiten gente, esten seguros que nadie lo extrañara:D*`
+teks = `cjue`
 samu330.sendMessage(mdata.id, teks, MessageType.text,{ contextInfo: {"mentionedJid": [num]}})
 
 } else if (anu.action == 'promote') {
@@ -274,18 +272,7 @@ ppimg = await samu330.getProfilePicture(`${num.split('@')[0]}@c.us`)
 ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
 thu = await samu330.getStatus(anu.participants[0], MessageType.text)
-teks = `*✅NUEVO ADMIN✅*\n*🙋🏻‍♂️ Nombre*: @${num.split('@')[0]}\n*📋 INFO*: ${thu.status}\n\n🥳 *FEILICIDADES!!*, te as convertido en administrador del grupo ${mdata.subject}`
-let buff = await getBuffer(ppimg)
-samu330.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
-} else if (anu.action == 'demote') {
-num = anu.participants[0]
-try {
-ppimg = await samu330.getProfilePicture(`${num.split('@')[0]}@c.us`)
-} catch {
-ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-}
-thu = await samu330.getStatus(anu.participants[0], MessageType.text)
-teks = `*❌UN ADMIN MENOS❌*\n*🙋🏻‍♂️ Nombre*: @${num.split('@')[0]}\n*📋 INFO*: ${thu.status}\n\n*😪Nimodos, ya no eres admnistrador del grupo* ${mdata.subject}`
+teks = `🎉NUEVO ADMIN🎉\n\n*💫 Nombre*: @${num.split('@')[0]}\n*📋 INFO*: ${thu.status}\n\n🥳 FELICIDADES!!, te has convertido administrador de ${mdata.subject}, esperamos grandes cosas de ti :D`
 let buff = await getBuffer(ppimg)
 samu330.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 }
@@ -1039,7 +1026,7 @@ Girar : @${moving.turn == "X" ? moving.X : moving.O}
 	    	if (messagesC.includes("chat.whatsapp")){
 		        if (!isGroup) return
 		        if (!isAntigp) return
-		        if (isAdmin) return reply('Tienes suerte, eres admin y no te sacaré')
+		        if (isAdmin) return reply('Che admin pendejo, que parte de que enlaces aca no')
 			reply(`Link detectado ${sender.split("@")[0]} serás expulsado de este grupo`)
 			samu330.groupRemove(from, [sender])
 		}
@@ -1065,28 +1052,19 @@ Girar : @${moving.turn == "X" ? moving.X : moving.O}
 					}
 				}
 			}
-			if (isGroup && botAdmin && isAntiLeg) {      
-			if (!itsMe) {
-			if (isAudio) {
-			if (isAdmin) reply(`😒che admin pndejo, enves que des el ejemplo, ya que el Antilegiones esta activado, osea que no se permiten toda clase de mensajes que puedan ser travas... pero noooo... como eres admin te crees la gran vrg no?🙄\n*Pues conmigo te jodiste😑*\nALV por puto👿`)
-				reply(`*AUDIO DETECTADO, EN ESTE GRUPO NO SE PERMITEN LOS AUDIOS, YA QUE ESTAN ACTIVADOS LOS COMANDOS ANTILEGIONES, POR SEGURIDAD TE ELIMINARE*\n\n🛃 ESTE GRUPO ESTA PROTEGIDO POR:\n𝚂𝚊𝚖𝚞𝟹𝟹𝟶® | NyanBot™\n\n*🐉Samu330*`)
-				samu330.groupRemove(from, [sender])
-			}
-			}
-			}
 			if (isGroup && botAdmin && isAntiLeg) {                                                                	  
 			if (!itsMe) {                        
 			if (isContact) {
-                        if (isAdmin) reply(`😒che admin pndejo, enves que des el ejemplo, ya que el Antilegiones esta activado, osea que no se permiten toda clase de mensajes que puedan ser travas... pero noooo... como eres admin te crees la gran vrg no?🙄\n*Pues conmigo te jodiste😑*\nALV por puto👿`)                                                                  
-				reply(`*CONTACTO DETECTADO, EN ESTE GRUPO NO SE PERMITEN LOS AUDIOS, YA QUE ESTAN ACTIVADOS LOS COMANDOS ANTILEGIONES, POR SEGURIDAD TE ELIMINARE*\n\n🛃 ESTE GRUPO ESTA PROTEGIDO POR:\n𝚂𝚊𝚖𝚞𝟹𝟹𝟶® | NyanBot™\n\n*🐉Samu330*`)
-				samu330.groupRemove(from, [sender])              
+                        if (isAdmin) reply(`Che admin webon, ya sabíamos que eras pendejo, no era necesario el demostrarlo.`)
+				reply(`*¡¡No contactos en este grupo!!* Saludos a la flia.`)
+				samu330.groupRemove(from, [sender])             
 			}               
 			}                     
 			}
 	    		if (isGroup && botAdmin && isAntiLeg) {                                                                	  
 			if (!itsMe) {
                       	if (q.length > 10000) {
-				reply('*Este mensaje contiene mas de 10, 000 caracteres, probablemente puede ser una trava, por lo que tendre que eliminarte🙂*\n\n_Este grupo esta protegido por_ *🔐Samu330*')
+				reply('Que hace seyora, ese mensaje contiene mas de 10.000 caracteres.\nPor seguridad, tendré que eliminarte de este grupo 👀')
 				samu330.groupSettingChange(from, GroupSettingChange.messageSend, true).then(() => {
 				samu330.sendMessage(from, '*Esperemos 10 segundos🙄*', MessageType.text)
 				})
@@ -1099,8 +1077,8 @@ Girar : @${moving.turn == "X" ? moving.X : moving.O}
 			if (isGroup && botAdmin && isAntiLeg) {                                                         	  
 			if (!itsMe) {                                 
 			if (isLocation) {
-                        if (isAdmin) reply(`😒che admin pndejo, enves que des el ejemplo, ya que el Antilegiones esta activado, osea que no se permiten toda clase de mensajes que puedan ser travas... pero noooo... como eres admin te crees la gran vrg no?🙄\n*Pues conmigo te jodiste😑*\nALV por puto👿`)                                                                     
-				reply(`*LOCALIZACION DETECTADA, EN ESTE GRUPO NO SE PERMITEN LOS AUDIOS, YA QUE ESTAN ACTIVADOS LOS COMANDOS ANTILEGIONES, POR SEGURIDAD TE ELIMINARE*\n\n🛃 ESTE GRUPO ESTA PROTEGIDO POR:\n𝚂𝚊𝚖𝚞𝟹𝟹𝟶® | NyanBot™\n\n*🐉Samu330*`)                   
+                        if (isAdmin) reply(`Che admin webon, ya sabíamos que eras pendejo, no era necesario el demostrarlo.`)
+				reply(`👀`)
 				samu330.groupRemove(from, [sender])           
 			}             
 			}                     
